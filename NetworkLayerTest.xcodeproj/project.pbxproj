@@ -22,6 +22,8 @@
 		EC9876952AAEF86E0004CF32 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9876942AAEF86E0004CF32 /* Environment.swift */; };
 		EC9876972AAF04190004CF32 /* BaseApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9876962AAF04190004CF32 /* BaseApiRequest.swift */; };
 		EC9876992AAF046E0004CF32 /* VerifyEmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9876982AAF046E0004CF32 /* VerifyEmailRequest.swift */; };
+		EC98769E2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98769D2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift */; };
+		EC9876A02AAF3E8C0004CF32 /* VerifyEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98769F2AAF3E8C0004CF32 /* VerifyEmail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		EC9876942AAEF86E0004CF32 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		EC9876962AAF04190004CF32 /* BaseApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiRequest.swift; sourceTree = "<group>"; };
 		EC9876982AAF046E0004CF32 /* VerifyEmailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailRequest.swift; sourceTree = "<group>"; };
+		EC98769D2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEndpoints.swift; sourceTree = "<group>"; };
+		EC98769F2AAF3E8C0004CF32 /* VerifyEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +150,19 @@
 			children = (
 				EC9876942AAEF86E0004CF32 /* Environment.swift */,
 				EC9876962AAF04190004CF32 /* BaseApiRequest.swift */,
+				EC98769D2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift */,
 				EC9876982AAF046E0004CF32 /* VerifyEmailRequest.swift */,
+				EC9876A12AAF41F00004CF32 /* Model */,
 			);
 			path = "API Service";
+			sourceTree = "<group>";
+		};
+		EC9876A12AAF41F00004CF32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC98769F2AAF3E8C0004CF32 /* VerifyEmail.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +308,11 @@
 				EC9876992AAF046E0004CF32 /* VerifyEmailRequest.swift in Sources */,
 				EC9876592AACEEBB0004CF32 /* ViewController.swift in Sources */,
 				EC9876552AACEEBB0004CF32 /* AppDelegate.swift in Sources */,
+				EC9876A02AAF3E8C0004CF32 /* VerifyEmail.swift in Sources */,
 				EC9876952AAEF86E0004CF32 /* Environment.swift in Sources */,
 				EC9876572AACEEBB0004CF32 /* SceneDelegate.swift in Sources */,
 				EC9876972AAF04190004CF32 /* BaseApiRequest.swift in Sources */,
+				EC98769E2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

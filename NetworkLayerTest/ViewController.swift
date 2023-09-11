@@ -12,13 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tryThis = TryThis()
 
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func verifyEmailButtonTapped(_ sender: Any) {
+        let tryThis = TryThis()
         Task {
             let result = await tryThis.verifyEmail()
             print(result ?? "")
         }
+
     }
 
 }
@@ -29,7 +34,6 @@ class TryThis {
 
     func verifyEmail() async -> VerifyEmailResponse? {
         let request = VerifyEmailRequst(email: "s1demo.sequoia.com")
-        
         do {
             let response : VerifyEmailResponse = try await networkManager.submit(request)
             // handle success

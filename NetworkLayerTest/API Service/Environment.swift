@@ -20,9 +20,6 @@ extension Environment {
     static var current: Environment = .prod
 }
 
-enum BaseEndpoints: String, PathRepresentable {
-    case basePath
-}
 
 /// 
 
