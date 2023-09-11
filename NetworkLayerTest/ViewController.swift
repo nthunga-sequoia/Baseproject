@@ -19,7 +19,6 @@ class ViewController: UIViewController {
             let result = await tryThis.verifyEmail()
             print(result ?? "")
         }
-        
     }
 
 }
@@ -28,16 +27,17 @@ class ViewController: UIViewController {
 class TryThis {
     private let networkManager = NetworkManager()
 
-    func verifyEmail() async -> Data? {
-        let request = VerifyEmailRequst(email: "indy.ssa@mailinator.com")
+    func verifyEmail() async -> VerifyEmailResponse? {
+        let request = VerifyEmailRequst(email: "s1demo.sequoia.com")
         
         do {
-            try await networkManager.submit(request)
+            let response : VerifyEmailResponse = try await networkManager.submit(request)
             // handle success
-            return nil
+            return response
         } catch {
             // handle failure
             print("Failed")
         }
+        return nil
     }
 }

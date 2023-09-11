@@ -8,7 +8,7 @@
 import Foundation
 import YNetwork
 
-struct VerifyEmail: Codable {
+struct VerifyEmailResponse: Codable {
     let data: DataObject
     let success: Bool
 }
@@ -26,7 +26,7 @@ struct DataObject: Codable {
     let iconUrl: String
 }
 
-struct VerifyEmailRequst: Codable {
+struct VerifyEmailRequst: Encodable {
     let email: String
 }
 
