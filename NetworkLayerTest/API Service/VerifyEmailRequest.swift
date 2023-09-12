@@ -8,14 +8,20 @@
 import Foundation
 import YNetwork
 
-extension VerifyEmailRequst: BaseApiRequest {
+extension VerifyEmailRequest: BaseApiRequest {
     // which endpoint to hit
     var path: PathRepresentable { AuthenticationEndpoints.verifyEmail }
     
     var method: HttpMethod {
         .POST
     }
-    
 }
 
-
+extension GetProfileRequest: BaseApiRequest {
+    // which endpoint to hit
+    public var path: PathRepresentable { AuthenticationEndpoints.getProfile }
+    
+    public var method: HttpMethod {
+        .GET
+    }
+}

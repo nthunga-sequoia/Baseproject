@@ -12,9 +12,9 @@ protocol BaseApiRequest: NetworkRequest { }
 
 extension BaseApiRequest {
     // All requests sharing the same base path
-    var basePath: PathRepresentable? { Environment.current }
+    public var basePath: PathRepresentable? { APIBasePath.current }
     
-    var headers: HttpHeaders? {
+    public var headers: HttpHeaders? {
         var headers: Headers = [:]
         headers["Content-Type"] = "application/json"
         headers["appVersionNumber"] = "6.9.0"
@@ -25,6 +25,8 @@ extension BaseApiRequest {
         headers["locale-timezone"] = "Asia/Kolkata"
         headers["deviceOSVersion"] = "16.4"
         headers["agent"] = "client"
+        headers["apiToken"] = "8a61cc9b-2b8a-4efb-9bf4-9e78157f933c"
+        headers["token"] = "8a61cc9b-2b8a-4efb-9bf4-9e78157f933c"
         return headers
     }
 }

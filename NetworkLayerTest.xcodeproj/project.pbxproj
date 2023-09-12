@@ -19,7 +19,7 @@
 		EC98767B2AACEEBC0004CF32 /* NetworkLayerTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98767A2AACEEBC0004CF32 /* NetworkLayerTestUITestsLaunchTests.swift */; };
 		EC98768F2AAEE8D90004CF32 /* YNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = EC98768E2AAEE8D90004CF32 /* YNetwork */; };
 		EC9876922AAEE9A10004CF32 /* YPersistence in Frameworks */ = {isa = PBXBuildFile; productRef = EC9876912AAEE9A10004CF32 /* YPersistence */; };
-		EC9876952AAEF86E0004CF32 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9876942AAEF86E0004CF32 /* Environment.swift */; };
+		EC9876952AAEF86E0004CF32 /* APIBasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9876942AAEF86E0004CF32 /* APIBasePath.swift */; };
 		EC9876972AAF04190004CF32 /* BaseApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9876962AAF04190004CF32 /* BaseApiRequest.swift */; };
 		EC9876992AAF046E0004CF32 /* VerifyEmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9876982AAF046E0004CF32 /* VerifyEmailRequest.swift */; };
 		EC98769E2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98769D2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift */; };
@@ -58,7 +58,7 @@
 		EC9876742AACEEBC0004CF32 /* NetworkLayerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9876782AACEEBC0004CF32 /* NetworkLayerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTestUITests.swift; sourceTree = "<group>"; };
 		EC98767A2AACEEBC0004CF32 /* NetworkLayerTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EC9876942AAEF86E0004CF32 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		EC9876942AAEF86E0004CF32 /* APIBasePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBasePath.swift; sourceTree = "<group>"; };
 		EC9876962AAF04190004CF32 /* BaseApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiRequest.swift; sourceTree = "<group>"; };
 		EC9876982AAF046E0004CF32 /* VerifyEmailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailRequest.swift; sourceTree = "<group>"; };
 		EC98769D2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEndpoints.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		EC9876932AAEF6680004CF32 /* API Service */ = {
 			isa = PBXGroup;
 			children = (
-				EC9876942AAEF86E0004CF32 /* Environment.swift */,
+				EC9876942AAEF86E0004CF32 /* APIBasePath.swift */,
 				EC9876962AAF04190004CF32 /* BaseApiRequest.swift */,
 				EC98769D2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift */,
 				EC9876982AAF046E0004CF32 /* VerifyEmailRequest.swift */,
@@ -309,7 +309,7 @@
 				EC9876592AACEEBB0004CF32 /* ViewController.swift in Sources */,
 				EC9876552AACEEBB0004CF32 /* AppDelegate.swift in Sources */,
 				EC9876A02AAF3E8C0004CF32 /* VerifyEmail.swift in Sources */,
-				EC9876952AAEF86E0004CF32 /* Environment.swift in Sources */,
+				EC9876952AAEF86E0004CF32 /* APIBasePath.swift in Sources */,
 				EC9876572AACEEBB0004CF32 /* SceneDelegate.swift in Sources */,
 				EC9876972AAF04190004CF32 /* BaseApiRequest.swift in Sources */,
 				EC98769E2AAF3E0C0004CF32 /* AuthenticationEndpoints.swift in Sources */,

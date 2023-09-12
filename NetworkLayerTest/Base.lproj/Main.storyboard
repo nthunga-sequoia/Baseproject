@@ -17,23 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-mL-D1i">
-                                <rect key="frame" x="159" y="403.66666666666669" width="75" height="45"/>
+                                <rect key="frame" x="140" y="403.66666666666669" width="113" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="30P-w8-Vhf"/>
-                                    <constraint firstAttribute="width" constant="75" id="i16-cM-KHj"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Tap"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Verify Email"/>
                                 <connections>
                                     <action selector="verifyEmailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sf5-RX-QQ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpU-oZ-hYI">
+                                <rect key="frame" x="144.66666666666666" y="493.66666666666674" width="103.66666666666666" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ao5-zl-SSd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get profile"/>
+                                <connections>
+                                    <action selector="getProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENL-Up-Zji"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YpU-oZ-hYI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LL9-vm-NQM"/>
                             <constraint firstItem="j2k-mL-D1i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SFE-fC-NgE"/>
                             <constraint firstItem="j2k-mL-D1i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eWX-5R-FYm"/>
+                            <constraint firstItem="YpU-oZ-hYI" firstAttribute="top" secondItem="j2k-mL-D1i" secondAttribute="bottom" constant="45" id="eXF-LW-bbW"/>
                         </constraints>
                     </view>
                 </viewController>
