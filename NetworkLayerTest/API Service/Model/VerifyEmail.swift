@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import YNetwork
+// Verify Email Response
 
 struct VerifyEmailResponse: Codable {
     let data: DataObject
@@ -23,10 +25,6 @@ struct DataObject: Codable {
     let isSsoEnabled: Bool
     let companyLogo: String
     let iconUrl: String
-}
-
-struct VerifyEmailRequest: Encodable {
-    let email: String
 }
 
 /// Get profile model

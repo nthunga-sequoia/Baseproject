@@ -8,12 +8,24 @@
 import Foundation
 import YNetwork
 
+struct VerifyEmail: Encodable, BodyBuilder {
+    let email: String
+}
+
+struct VerifyEmailRequest {
+    let item: VerifyEmail
+}
+
 extension VerifyEmailRequest: BaseApiRequest {
     // which endpoint to hit
     var path: PathRepresentable { AuthenticationEndpoints.verifyEmail }
     
     var method: HttpMethod {
         .POST
+    }
+    
+    var body: BodyBuilder? {
+        item
     }
 }
 

@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     func verifyEmail() async -> VerifyEmailResponse? {
-        let request = VerifyEmailRequest(email: "s1demo.sequoia.com")
+        let request = VerifyEmailRequest(item: VerifyEmail.init(email: "s1demo@sequoia.com"))
         do {
             let response : VerifyEmailResponse = try await networkManager.submit(request)
             // handle success
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     
     @IBAction func getProfile(_ sender: Any) {
         Task {
-            var result = await getProfile()
+            let result = await getProfile()
             print(result ?? "")
         }
     }

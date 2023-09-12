@@ -17,7 +17,7 @@ extension AuthenticationEndpoints: PathRepresentable {
     var pathValue: String {
         switch self {
         case .verifyEmail:
-            return "/idm/v1/contacts/verify-email" //https://hrx-backend.sequoia.com
+            return "/idm/v1/contacts/verify-email" 
         case .getProfile:
             return "/uam/users/profile"
         }
